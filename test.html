@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta charset="UTF-8">
+  <title>Respnsive Portolio Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <section class="banner" id="sec">
+   <header>
+    <a href="#" class="logo">Welcome</a>
+    <div id="toggle" onclick="toggle()"></div>
+  </header>
+  <div class="content">
+    <h2>virtual CV,<br> Mr <span>ROW Smith</span></h2>
+    <p>This my portfolio and I hope you like it.This is my virtual cv design to give a more modern feeling and experience.An expression of my skills and personality and a few thing ive leant along the way.</p>
+    <a href="#">Know More</a>
+  </div>
+ <ul class="sci"> 
+    <li><a href="https://www.facebook.com/profile.php?id=100001889405884"><img src="facebook.png"></a></li>
+    <li><a href="https://www.instagram.com/mr_rows_/"><img src="instapng.png"></a></li>
+    <li><a href="https://www.linkedin.com/in/ryan-smith-5906a71b2/"><img src="linkedin.png"></a></li>
+  </ul>
+  </ul>
+</section>
+<div id="navigation">
+ <ul>
+   <li><a href="ju.html">Home</a></li>
+   <li><a href="file:///C:/Users/Ryan%20Smith/Documents/ITDV/aboutMe.html">About Me</a></li>
+   <li><a href="file:///C:/Users/Ryan%20Smith/Documents/ITDV/timeLine.html">Experience</a></li>  
+   <li><a href="file:///C:/Users/Ryan%20Smith/Documents/ITDV/contact.html">Contact</a></li>
+ </ul>
+</div>
+<script type="text/javascript">
+ function toggle(){
+   var sec = document.getElementById('sec');
+   var nav = document.getElementById('navigation');
+   sec.classList.toggle('active')
+   nav.classList.toggle('active')
+ }
+</script>
+</body> 
+</html>
