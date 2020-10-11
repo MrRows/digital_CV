@@ -18,7 +18,7 @@
     <a href="#">Know More</a>
   </div>
  <ul class="sci"> 
-    <li><a href="https://www.facebook.com/profile.php?id=100001889405884"><img src="facebook.png"></a></li>
+    <li><a href="https://www.facebook.com/profile.php?id=100001889405884"><img id ="rotate" src="facebook.png"></a></li>
     <li><a href="https://www.instagram.com/mr_rows_/"><img src="instapng.png"></a></li>
     <li><a href="https://www.linkedin.com/in/ryan-smith-5906a71b2/"><img src="linkedin.png"></a></li>
   </ul>
@@ -56,7 +56,7 @@ function vibe(){
 </script>
 
 <script type="text/javascript">
-  let logo = document.querySelector('img');
+  let logo = document.getElementById('rotate');
 
   window.addEventListener('deviceorientation', (e) => {
     let tiltLR = e.gamma;
