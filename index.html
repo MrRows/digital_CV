@@ -60,10 +60,22 @@ function vibe(){
 
   window.addEventListener('deviceorientation', (e) => {
     let tiltLR = e.gamma;
-    Let tiltFB = e.beta;
+    let tiltFB = e.beta;
 
     logo.style.transform = 'rotate(${tiltLR}deg) rotate3d(1,0,0, ${tiltFB * -1}deg)';
   });
-</script>>
+</script>
+
+<script type="text/javascript">
+        document.addEventListener('visibilitychange', () => {
+          if (document.visibilityState === 'hidden') {
+            document.title = 'Come back!';
+          }
+
+          if (document.visibilityState === 'visible') {
+            document.title = 'Welcome';
+          }
+        });
+      </script>
 </body> 
 </html>
